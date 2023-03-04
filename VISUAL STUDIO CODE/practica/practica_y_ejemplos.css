@@ -1,0 +1,147 @@
+/* se puede emplear el elemento <style> en el body del html
+o generar un doc CSS para poder reutilizar los estilos
+y hacerlos mas generales---como por ejemplo:*/
+
+body{
+    background-color: coral;
+    
+    /*con el font fam, se puede cambiar el formato de fuente de todo el doc*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*se de la formato a los H*/
+h1,h2,h3{
+    text-align: center;
+}
+
+p{
+    color: aliceblue;
+}
+
+/*si quiero cambiar una propiedad de un elemento
+en particular, hay que seleccionarlo de la sig manera
+esto noafectara a, por ejemplo, otros h2 que esten en el mismo doc
+(DE NO TENER UNA COMBINACION DE ELEMENTOS IGUAL A LA 
+DEL EJEMPLO DE ABAJO, SINO EL ELEMENTO TOMARA LAS MISMAS
+PRPIEDADES*/
+
+div h2{
+    color: aquamarine;
+}
+
+/*uso de ID llamando con un #+nombre ID del elementoy 
+CLASS*/
+#parrafo-especial{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.parrafo{
+    color: brown;
+    font-style: italic;
+}
+
+a, img{
+    display: block;
+}
+a{
+    margin: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+/*este elemento sirve para que a todos los link
+cuando el cursor este sobre ellos, cambie de
+color la fuente*/
+a:hover{
+    color: turquoise;
+}
+
+img{
+    width: 70%;
+    margin: auto;
+}
+
+/*trataremos de centrar un elemento usando flex box*/
+.contenedor{
+    background-color: khaki;
+    height: 50vh;
+
+    
+
+    /*Para centrar el contenido*/
+    display: flex;
+
+    /*da a los elementos del contenedor por defecto una alineacion
+    row o de fila, pero tambien una direccion de columna -HAY QUE
+    TENER EN CUENTA ESTO!!! YA QUE JUSTIFY-CONTENT y aling-items
+    SE INVIERTEN SI ES COLUMN!!!*/
+    flex-direction: column;
+    
+    /*justify-content se encarga de centrar nuestros elementos en
+    el eje principal -por defecto es row o una fila horizontal-SE INVIERTE
+    Y PASA A SER COLUMNA SI LA ALINEACION EN COLUMN
+    si hay dos elementos o mas en un mismo contenedor se puede usar
+    space-around- que dara el mismo espacio a esos elementos*/
+    justify-content: space-around;
+
+    /*align-itemsse encarga de centrar nuestros elementos en
+    el eje secundario -por defecto es una columna vertical- SE INVIERTE
+    Y PASA A SER FILA SI LA ALINEACION EN COLUMN-*/
+    align-items: center;
+
+}
+
+#centrar-elem{
+    color: black;
+    width: 50%;
+}
+#img-center{
+    width: 250px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+/*dandole estilos a un boton*/
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2xp 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: violet;
+}
+button:hover{
+    background-color: rgb(206, 73, 206);
+}
+
+
+/*con esta config del hero nos asegurtamos que*/
+
+#hero{
+    /*sea flex y que el contenido este en columna y centrado*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    /*el color de la fuente*/
+    color: white;
+    /*la imagen de fondo del banenr con estos valores
+    va a tener una cierta "opacidad" que permite leer mejor el txt*/
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+   ,url(https://assemblerinstitute.com/wp-content/uploads/2022/02/lenguaje-2022-1.png);
+    
+    /*la img no se va a repetir*/
+    background-repeat: no-repeat;
+    /*ocupara el total de la pantalla*/
+    background-size: cover;
+    /*y el center center va adejar la img centrada
+    aunque se cambie de tamaño de pantalla*/
+    background-position: center center;
+}

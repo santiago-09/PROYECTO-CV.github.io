@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--para vincular la hoja de estilos css-->
+    <link rel="stylesheet" href="practica_y_ejemplos.css">
+
+    <!--colocar favicon en la pestaña de la pag-->
+    <link rel="shortcut icon" href="https://www.pngfind.com/pngs/m/664-6645136_computer-icons-robot-tag-download-byte-robot-favicon.png" type="image/x-icon">
+
+    <title>titulo del Documento</title>
+
+    
+
+</head>
+<body>
+    <!--H es un encabezado-->
+        <h1>ESTO ES UN TITULO</h1>
+        <H2>ESTO ES UN TITULO</H2>
+        <H3>ESTO ES UN TITULO</H3>
+
+    <!-- p es un parrafo 
+    (el elmento br permite hacer un salto de linea
+    sobre un mismo parrafo)-->
+        <p>Esto es un parrafo</p>
+        <p id="parrafo-especial">soy Santiago <br> tengo 3000 años</p>
+
+       
+                 <!--ID y clases (son selectores aun mas especificos)
+                    los ID son unicos por elementos pero
+                    las clases se pueden repetir(?)-->
+       
+        <p class="parrafo">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Earum quam explicabo laudantium dolorem aperiam minima,
+            nam fugit quos pariatur repellat est exercitationem quo eveniet.
+            Impedit, perferendis earum. Dolor, facilis commodi.
+       </p>
+
+       <p class="parrafo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Earum quam explicabo laudantium dolorem aperiam minima,
+        nam fugit quos pariatur repellat est exercitationem quo eveniet.
+        Impedit, perferendis earum. Dolor, facilis commodi.
+   </p>
+
+   <a href="http://google.com.ar">Este es un link a Google.</a>
+
+    <!--se puede poner una imagen desde el ordenador(local)
+    o desde un enlace(remota) en el src del elemento img
+    asi como tambien se puede dar formato aqui o desde CSS-->
+        <img src="https://i.blogs.es/fd396a/hook/1024_2000.jpg" alt="Aqui va una descripcion de la imagen en caso de que no cargue">
+
+
+    <!---ejemplos de etiquetas- que son contenedores basicamente
+    (todas las etiquetas mas abajo, se pueden
+    personalizar en el propio body 
+    y haciendo uso de css, en donde se les daran sus formatos y
+    sus propiedades)-->
+    
+    <!--un div es basicamente una etiqueta en donde podemos poner varios elementos dentro
+    por ejemplo h,p,-->
+        <div>
+            <h2>soy un titulo dentro de un div</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Earum quam explicabo laudantium dolorem aperiam minima,
+                nam fugit quos pariatur repellat est exercitationem quo eveniet.
+                Impedit, perferendis earum. Dolor, facilis commodi.
+           </p>
+
+        </div>
+
+    <div>
+        <h2>ESTE ELEMENTO "H2" SI CAMBIARA!!!
+            (POR LA COMBINACION DE "DIV+H2")
+        </h2>
+    </div>
+
+        <h2>ESTE ELEMENTO "H2" NO CAMBIARA!!!
+            (POR LA COMBINACION DE "DIV+H2")
+        </h2>
+
+    <!--representa el contenido principal del body de un documento
+     -->
+        <main></main>
+
+    <!--o encabezado, aporta info de la pag, asi como
+    iconos, menues, busqueda, entre otros elementos-->
+        <header></header>
+
+    <!--o pie de pagina, tambien aporta info  de la pagina
+    -->
+        <footer></footer>
+
+    <!--representa una seccion generica de un doc. sirve para determinar que contenido 
+    corresponde a que parte de un esquema. es una etiqueta semantica-->
+        <section></section>
+
+    <!---->
+        <article></article>
+        
+    <!--trataremos de centrar un elemento usando flex box-->
+    
+    <div class="contenedor">
+        
+        <img src="https://i.blogs.es/fd396a/hook/1024_2000.jpg" id="img-center" alt="Aqui va una descripcion de la imagen en caso de que no cargue">
+
+        <h1>CENTRAR ELEMENTO</h1>
+
+         
+       <p id="centrar-elem">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Dolor, quas tenetur fuga accusantium qui quod blanditiis a ex aliquam nihil.
+        Libero nobis temporibus hic recusandae mollitia rerum distinctio laborum itaque.</p>
+        
+    </div>
+
+    <!--EN EL DOC HTML PONDREMOS UN BOTON QUE TENDRA SU ESTILO 
+    Y PROPOIEDADES EN LA HOJA DE CSS, QUE BASICAMENTE, SERAN LOS
+    MISMOS PARA CUALQUIER BOTON QUE QUERRAMOS AGREGAR DESPUES -->  
+    <BUtton>BOTON EJEMPLO</BUtton>
+
+    <!--un HERO en html, en un banner/imagen con textos 
+    u otros objetos que sirven para que la marca o lo que 
+    se de la pag web destaque. en el sig ejemplo, se ve
+    unamarca X+imagen+boton para un form-->
+
+    <section id="hero">
+        <h1>Aprende a programar <br> con los Mejores!</h1>
+        <button>Aplica YA!</button>
+    </section>
+
+
+   
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://img.icons8.com/emoji/512/light-bulb-emoji.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Santiago-Ayala-CV</Santiago-Ayala_CV></title>
+
+</head>
+<body>
+
+    <script src="eventos.js"></script>
+
+    <header id="menu">
+        <div class="contenedor">
+            <h2 class="logo">PROYECTO <br> CV</h2>
+            <nav id="enlaces">
+                <a href="#experiencia">EXPERIENCIAS</a> 
+                <a href="#habilidades">HABILIDADES</a>
+                <a href="#info">INFO & CONTACTO</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h1>Soy SANTIAGO AYALA</h1>
+        <p>Programador Front-End.</p>
+        <img id="foto-perfil" src="https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-No-Background.png" alt="Foto de Perfil">
+    </section>
+
+    <section id="experiencia">
+        
+        <div class="contenedor">        
+            <div class="img-exp-cont"> </div>
+                <div class="exp-txt">
+                    <h2><span class="color-acento" >EXPERIENCIA</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quidem consectetur
+                        corrupti laborum hic, eveniet sed illo
+                        ipsum suscipit, dignissimos voluptatum
+                        vitae recusandae nulla quibusdam
+                        blanditiis ut sequi facilis aut. Iste!
+                    </p>
+                </div>
+        </div>
+    </section>
+    
+    <section id="habilidades" >
+            
+            <div class="contenedor">
+                <div class="habi-txt">
+                    <h2><span class="color-acento"> HABILIDADES</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quidem consectetur
+                        corrupti laborum hic, eveniet sed illo
+                        ipsum suscipit, dignissimos voluptatum
+                        vitae recusandae nulla quibusdam
+                        blanditiis ut sequi facilis aut. Iste!
+                        </p>
+                </div>
+                <div class="img-habi-cont"> </div>
+                    
+            </div>
+    </section>
+
+    <section id="info">
+        
+        
+        <div class="contenedor">
+            <div class="datos">
+                <h2 class="titulo-info"><span class="color-acento"> INFORMACION PERSONAL</span></h2>
+                <ul>
+                    <li><span class="color-acento"> APELLIDO:</span> Ayala.</li>
+                    <li><span class="color-acento"> NOMBRE:</span> Santiago.</li>
+                    <li><span class="color-acento"> DNI:</span> 33444555</li>
+                    <li><span class="color-acento"> TELEFONO:</span> +54 385 123456</li>
+                    <li><span class="color-acento"> CORREO:</span> ejemplo@ejemplo.com.ar</li>
+                    <li><span class="color-acento"> DIRECCION:</span >Ejemplo Nº789</li>
+                    <li><span class="color-acento"> CIUDAD:</span> Santiago del Estero</li>
+                    
+                </ul>
+            </div>  
+
+            <div class="contacto">
+                <h2 id="titulo-contacto"><span class="color-acento" >CONTACTO</span></h2>
+                <p>Si deseas ponerte en contacto, completa el siguiente formulario<br>y
+                    te respondere a la brevedad. Saludos!</p>
+                
+                <form class="contenedor-form">
+                    <div class="formulario">
+
+                        <input type="text" class="form-input" id="nombre" placeholder="Nombre." required>
+                        <input type="email" class="form-input" id="correo" placeholder="E-mail." required>
+                        <textarea class="form-input-mens" id="mensaje" placeholder="Mensaje." required></textarea>
+
+                        <input type="submit" value="Enviar" class="btn-enviar">
+                    </div>
+                </form>
+                    
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <ul>
+                <li id="redes"><a id="fb" href="https://www.facebook.com/" target="_blank"><img class="img-redes" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="facebook"></a></li>
+                <li id="redes"><a id="ig" href="https://www.instagram.com/" target="_blank"><img class="img-redes" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram"></a></li>
+                <li id="redes"><a id="tg"href="https://web.telegram.org/" target="_blank"><img class="img-redes" src="https://cdn-icons-png.flaticon.com/512/3536/3536661.png" alt="telegram"></a></li>
+                <li id="redes"><a id="gh" href="https://github.com/" target="_blank"><img class="img-redes" src="https://cdn-icons-png.flaticon.com/512/3291/3291695.png" alt="github"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <section class="boton-up">
+        <form action="#menu">
+            <button id="boton"> Up! </button>
+        </form>
+    </section>
+              
+</body>
+</html>

@@ -1,0 +1,378 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font: size 300px; margin: 10px; font-weight: bold;}
+h2{font-size: 3em; font-weight: bold;}
+h3{font: size 2em;}
+p{ font-size: 1.25em; margin: 5px;}
+ul{list-style: none;}
+.color-acento{color: #537FE7;}
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    margin: 0px;
+    background-color: #537FE7;
+    padding: 15px;
+    
+}
+
+header .contenedor{
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+
+header .logo{
+    margin: 0;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: #E9F8F9;
+    font-size: 1.75em;
+    text-align: center;
+    justify-content: start;
+    }
+    
+header nav{
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 10px 15px;
+        justify-content: end;
+
+}
+
+header a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px;
+    color: #E9F8F9;
+ }
+a:hover{
+    color: #C0EEF2;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    color: #E9F8F9 ;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("https://www.bambu-mobile.com/wp-content/uploads/2022/06/Lenguajes-de-programacion-del-futuro-programacion-lenguajes-de-programacion-python-JS-C-Java-1024x683.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#foto-perfil{
+    width: 200px;
+    height: 200px;
+}
+
+#habilidades .contenedor{
+    text-align: center;
+    padding: 100px 15px 200px 15px;
+    background-color: #C0EEF2;
+}
+
+#experiencia .contenedor{
+    text-align: center;
+    padding: 100px 15px 200px 15px;
+    background-color: #bfe0e9;
+
+    
+}
+
+
+
+#info .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 15px 100px 15px;
+    background-color: #bfe0e9;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 15px 100px 15px;
+}
+
+.titulo-info{  text-align: center;}
+#titulo-contacto{margin-bottom: 10px;}
+.contacto{ text-align: center;}
+
+.contenedor-form{
+    background-color: #a5dade;
+    width: 90%;
+    height: 90%;
+    max-height: 500px;
+    max-width: 300px;
+    padding: 40px 20px;
+    border-radius: 5%;
+    margin: 15px;
+
+}
+
+.formulario{
+    width: 100%;
+    display: grid;
+    grid-auto-columns: 100%;
+    gap: 1em;
+}
+
+.form-input{
+    margin: 5px;
+    font-size: 15px;
+    padding: 1px 3px;
+}
+.form-input-mens{
+    height: 200px;
+    resize: none;
+    padding: 5px 2px;
+}
+
+.btn-enviar{
+    background-color: #537FE7;
+    color: black;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+
+}
+
+footer{
+    margin: 0%;
+    height: 120px;
+    background-color: #537FE7;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+footer li{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img-redes{
+    width: 40px;
+}
+
+#redes:hover{
+    transform:translateY(-3px) scale(1.0);
+}
+
+.boton-up{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    bottom: 1px;
+    right: 1px;
+
+}
+
+#boton{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #537FE7;
+    
+}
+
+#boton:hover{
+    background-color: #C0EEF2;
+}
+
+@media (min-width: 720px){
+    header .logo{
+        margin: 0;
+        padding: 10px 50px;
+        font-size: 1.8em;
+        }        
+    header nav{
+        align-items: end;
+        padding: 10px 10px;   
+    }
+
+    .banner{
+        font-size: 30px;
+    }
+    #foto-perfil{
+        width: 250px;
+        height: 250px;
+    }
+    header{
+        position: fixed;
+        width: 100%;        
+    }
+
+    #experiencia .contenedor{
+        display: flex;
+        padding: 100px 15px;
+    }
+
+    #experiencia .exp-txt{
+        width: 60%;
+        text-align: center;
+        padding: 0px 100px;
+
+    }
+
+    #experiencia .img-exp-cont{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
+        ), url(https://global-uploads.webflow.com/5f5a53e153805db840dae2db/6073fba493ae974b800b0c7d_programador-680x453.jpeg); 
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 400px;
+        padding: 0px 0px;
+        margin: 50px 100px;
+
+    }
+
+    #habilidades .contenedor{
+        display: flex;
+        padding: 100px 15px;
+    }
+
+    #habilidades .habi-txt{
+        width: 60%;
+        text-align: center;
+        padding: 0% 100px;
+                      
+    }
+
+    #habilidades .img-habi-cont{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
+        ), url(https://desarrolloweb.com/storage/tag_images/actual/RMhVjjVD4x1sL1vNnEx6BBFITf9eaEPedch3nfqs.png); 
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 400px;
+        padding: 0% 0%;
+        margin: 50px 100px;
+    }
+
+    #info .contenedor{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        padding: 90px 40px;
+        
+    }
+
+    #info .datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 0px 50px;
+    }
+
+    
+    
+    .contacto{
+        justify-content: right;
+        align-items: center;
+        margin: 0%;
+        padding:50px 50px;
+    }
+    
+    .titulo-info{ justify-content: center; text-align: center;}
+    #titulo-contacto{margin-bottom: 10px;}
+    .contacto{ text-align: center;}
+    
+    .contenedor-form{
+        background-color: #a5dade;
+        width: 90%;
+        height: 90%;
+        max-height: 500px;
+        max-width: 300px;
+        padding: 40px 20px;
+        border-radius: 5%;
+        margin: 15px;
+    
+    }
+    
+    .formulario{
+        width: 100%;
+        display: grid;
+        grid-auto-columns: 100%;
+        gap: 1em;
+    }
+    
+    .form-input{
+        margin: 5px;
+        font-size: 15px;
+        padding: 1px 3px;
+    }
+    .form-input-mens{
+        height: 200px;
+        resize: none;
+        padding: 5px 2px;
+    }
+    
+    .btn-enviar{
+        background-color: #537FE7;
+        color: black;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        padding: 7px;
+        cursor: pointer;
+    
+    }
+    
+    #boton{
+        display: none;
+    }
+}

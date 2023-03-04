@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+body{  
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.2em;}
+h3{font-size: 2emn;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-weight: bold;}
+
+/*ocupa todo el espacio de la pantalla*/
+.contenedor{
+    max-width: 1300px;
+    margin: auto;
+}
+
+/*cambia el color de la fuente para los
+elementos que estan dentro de un spna
+con la clase especificada*/
+.color-acento{
+    color: royalblue;
+}
+
+header{ 
+    background-color:rgb(202, 189, 189);
+}
+
+/*"mi curriculum*/
+header .logo{
+    margin: 1px ;
+    padding: 25px, 30px;
+    font-weight: bold;
+    color: royalblue ;
+    font-size: 1.80em;
+}
+
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0%;
+}
+
+header a{
+    padding: 10px 20px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/*cambia el color del enlace cuando se coloca el cursor*/
+header a:hover{
+    color: royalblue;
+}
+
+section h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+    padding: 5px;
+
+}
+
+img {
+    align-items: center;
+    width: 200px;
+    height: 200px;
+
+}
+
+#info-personal .contenedor ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px ;
+    text-align: left;
+
+    background-color: aqua;
+}
+
+#info-personal .contenedor li{
+    display: flex;
+    align-items: start;
+    text-align: left;
+
+}
+
+div .contenedor{
+    background-color: burlywood;
+}
+
+#menu{
+
+}
+
+#menu .contenedor{
+    text-align: center;
+    padding: 100px 25px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(202, 189, 189);   
+}
+
+footer .contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px;
+}
