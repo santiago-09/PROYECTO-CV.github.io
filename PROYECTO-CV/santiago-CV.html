@@ -20,9 +20,7 @@
 </head>
 <body>
 
-    <script src="eventos.js"></script>
-
-    <header id="menu">
+   <header id="menu">
         <div class="contenedor">
             <h2 class="logo">PROYECTO <br> CV</h2>
             <nav id="enlaces">
@@ -100,9 +98,14 @@
                 <form class="contenedor-form">
                     <div class="formulario">
 
-                        <input type="text" class="form-input" id="nombre" placeholder="Nombre." required>
-                        <input type="email" class="form-input" id="correo" placeholder="E-mail." required>
-                        <textarea class="form-input-mens" id="mensaje" placeholder="Mensaje." required></textarea>
+                        <label for="nombre">Nombre completo.</label>
+                        <input name="nombre" type="text" class="form-input" id="nombre" required>
+
+                        <label for="email">Tu Correo.</label>
+                        <input name="correo" type="email" class="form-input" id="correo" required>
+
+                        <label for="mensaje">Escribí tu mensaje.</label>
+                        <textarea name="mensaje" class="form-input-mens" id="mensaje"  required></textarea>
 
                         <input type="submit" value="Enviar" class="btn-enviar">
                     </div>
